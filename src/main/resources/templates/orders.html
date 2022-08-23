@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/html">
+ <head>
+     <link th:href="@{/css/orders.css}" rel="stylesheet">
+ </head>
+ <body>
+  <div class="card">
+    <h1> Orders </h1>
+    <h2> Enter Your Pizza Details </h2>
+    <div class="sizeBox" id="options">
+  
+      <section class="Size">
+        <div class="labelTitle">
+          Size:
+        </div>
+        <label>
+          <input type="radio" name="Size" checked>
+          <span class="design"></span>
+          <span class="text">Small</span>
+        </label>
+      
+        <label>
+          <input type="radio" name="Size">
+          <span class="design"></span>
+          <span class="text">Medium</span>
+        </label>
+      
+        <label>
+          <input type="radio" name="Size">
+          <span class="design"></span>
+          <span class="text">Large</span>
+        </label>
+      
+      </section>
+      <section class="Base">
+        <div class="labelTitle">
+          Base:
+        </div>
+        <label>
+          <input type="radio" name="Base" checked>
+          <span class="design"></span>
+          <span class="text">Thin Crust</span>
+        </label>
+      
+        <label>
+          <input type="radio" name="Base">
+          <span class="design"></span>
+          <span class="text">Pan</span>
+        </label>
+      
+        <label>
+          <input type="radio" name="Base">
+          <span class="design"></span>
+          <span class="text">Stuffed Crust</span>
+        </label>
+      
+      </section>
+      <h2>Select Toppings</h2>
+      <div>
+        <label>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        
+        <span class="text"> I have a bike </span></label>
+        <label>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+       <span class="text"> I have a car</span></label>
+       <label>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <span class="text"> I have a boat </span></label>
+      </div>
+    </div>
+
+  </div>
+  <div class="card">
+    <h2> Your Pizza Orders </h2>
+
+  </div>
+ </body>
+</html>
