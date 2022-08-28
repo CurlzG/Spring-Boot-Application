@@ -31,4 +31,19 @@ public class DemoController {
             return "index";
         }
     }
+
+    @PostMapping(value="/build")
+    String getBuild(){
+        System.out.println("Hello Build");
+      return "popup";
+    }
+    @PostMapping(value="/orders")
+    String addOrder(String Size, String Base, String Toppings){
+        System.out.println(Size);
+        System.out.println(Base);
+        System.out.println(Toppings);
+        System.out.println("Hello Build");
+        return "orders";
+    }
+
 }

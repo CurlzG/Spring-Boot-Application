@@ -8,13 +8,10 @@
 
 
 </style> 
-<link href="../static/css/popup.css" rel="stylesheet">
+<link th:href="@{/css/popup.css}"  rel="stylesheet">
 </head> 
 
 <body>
-<!-- Trigger/Open The Modal --> 
-<button id="myBtn">Open Modal</button>
-
 <!-- The Modal --> 
 <div id="myModal" class="modal">
 
@@ -23,38 +20,43 @@
         <span class="close">&times;</span>
         <h2> Select Pizza Size</h2>
         <group class="inline-radio">
-          <div><input type="radio" name="Size"><label>Small</label></div>
-          <div><input type="radio" name="Size"><label>Medium</label></div>
-          <div><input type="radio" name="Size" checked><label>Large</label></div>
-          <div><input type="radio" name="Size"><label>Very Large</label></div>
+          <div><input value="Size" type="radio" name="Size"><label>Small</label></div>
+          <div><input value="Size"  type="radio" name="Size"><label>Medium</label></div>
+          <div><input value="Size"  type="radio" name="Size"><label>Large</label></div>
+          <div><input value="Size"  type="radio" name="Size"><label>Very Large</label></div>
         </group>
         <h2> Select Base</h2>
         <group class="inline-radio">
           <div><input type="radio" name="Base"><label>Thin</label></div>
           <div><input type="radio" name="Base"><label>Plain</label></div>
-          <div><input type="radio" name="Base" checked><label>Deep Dish</label></div>
+          <div><input type="radio" name="Base"><label>Deep Dish</label></div>
           <div><input type="radio" name="Base"><label>Cheese Crust</label></div>
         </group>
-        <h2> Select Pizza Size</h2>
+        <h2> Select Toppings </h2>
         <group class="inline-radio">
-          <div><input type="checkbox" name="visits"><label>Never</label></div>
-          <div><input type="checkbox" name="visits"><label>Rarely</label></div>
-          <div><input type="checkbox" name="visits" checked><label>Often</label></div>
-          <div><input type="checkbox" name="visits"><label>Loads</label></div>
+          <div><input type="checkbox" name="Toppings"><label> Tomatoes</label></div>
+          <div><input type="checkbox" name="Toppings"><label> Cheese</label></div>
+          <div><input type="checkbox" name="Toppings"><label> Ham </label></div>
+          <div><input type="checkbox" name="Toppings"><label>Bacon </label></div>
+        </group>
+        <h2> Extra Toppings </h2>
+        <group class="inline-radio">
+            <div><input type="checkbox" name="Toppings"><label> Pineapple</label></div>
+            <div><input type="checkbox" name="Toppings"><label>Pepperoni </label></div>
+            <div><input type="checkbox" name="Toppings"><label> Sour Cream  </label></div>
+            <div><input type="checkbox" name="Toppings"><label> BBQ Sauce </label></div>
         </group>
                 <br>
-
+                <form action="/orders" method="post">
+        <button class="popupbutton"> Add Pizza To My Order </button>
+        </form>
           </div>
     </div>
     
 
 
 
-  
 
-
-<div class="selection">
-    
 
         </div>
         </body>
